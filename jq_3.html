@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #cr{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 10px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <div id="cr"></div>
+
+    <p>ここに文章が入ります。</p>
+
+    <iframe src="https://github.com"></iframe>
+
+    <script type="text/javascript">
+      // $("div").click(function(){
+      $("div").hover(function(){      //クリックすると別ページへ遷移
+        // $("p").html("divがクリックされました");
+        // alert($("p").html());
+        $("iframe").attr("src","https://learningdesin.jp");
+      })
+
+    </script>
+
+  </body>
+</html>
+
+

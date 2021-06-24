@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #cr{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 10px;
+        }
+      .sq{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        margin: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <div id="cr"></div>
+
+    <div class="sq"></div>
+
+    <div class="sq"></div>
+
+    <script type="text/javascript">    //$を使用することで省略できる
+      $("div").click(function(){
+        alert("divがクリックされました");  //idではなくdivを使用すること全ての読み込みを行う
+      })
+      
+      // $("#cr").click(function(){
+      //   alert("円がクリックされました");
+      // })
+
+      // $(".sq").click(function(){
+      //   alert("四角がクリックされました");
+      // })
+    </script>
+
+  </body>
+</html>
+
+
