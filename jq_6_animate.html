@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #cr{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+      }
+    </style>
+
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <div id="cr"></div>
+    <!-- <div class="sq"></div>
+    <div class="sq"></div> -->
+
+    <script type="text/javascript">
+    //アニメーションでの設定　2000は秒数を設定してある
+      $("#cr").click(function(){
+        $("#cr").animate({
+          width:"400px",
+          height:"400px",
+          marginLeft:"100px"},2000,function(){
+          $("#cr").css("background-color","red");
+        });
+      })
+    </script>
+
+  </body>
+</html>
+
+

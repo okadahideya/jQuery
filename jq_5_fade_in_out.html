@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #fadein-text{
+        display: none;
+      }
+    </style>
+
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- 
+    <div id="cr"></div>
+    <div class="sq"></div>
+    <div class="sq"></div> -->
+
+    <p id="text">textを出し入れ</p>
+    <button id="fa">fade</button>
+
+    <!-- <p id="fadein-text">textをフェイドインする</p>
+    <button id="fain">fadein</button> -->
+
+    <script type="text/javascript">
+      $("#fa").click(function(){
+        if($("#text").css("display") == "none"){
+          $("#text").fadeIn("slow");
+        }else{
+          $("#text").fadeOut("slow");
+        }
+      })
+
+
+      // $("#fain").click(function(){
+      //   $("#fadein-text").fadeIn("slow");
+      // })
+    </script>
+
+  </body>
+</html>
+
+
