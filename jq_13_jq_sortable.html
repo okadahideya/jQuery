@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style>
+      #sortable{
+        width: 200px;
+        height: 100px;
+      }
+      #sortable li{
+        margin: 0 3px 3px 3px;
+        padding: 0;
+        width: 60%;
+        margin: 5px;
+        background-color: yellow;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <ul id="sortable">
+      <li class="li-so">section1</li>
+      <li class="li-so">section2</li>
+      <li class="li-so">section3</li>
+      <li class="li-so">section4</li>
+      <li class="li-so">section5</li>
+      <li class="li-so">section6</li>
+      <li class="li-so">section7</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+    </script>
+
+  </body>
+</html>
+
+

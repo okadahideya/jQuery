@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style>
+      #resizable{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 10px;
+      }
+      #also{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="resizable">text</div>
+    <div id="also">also</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+      $("#resizable").resizable();
+      $("#also").resizable();
+    </script>
+
+  </body>
+</html>
+
+

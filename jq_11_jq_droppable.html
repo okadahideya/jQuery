@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style>
+      #drag{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 10px;
+      }
+      #drop{
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="drag" class="ui-widget-content">
+      <p>Drag me to my target</p>
+    </div>
+     
+    <div id="drop" class="ui-widget-header">
+      <p>Drop here</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+    $( "#drag" ).draggable();
+    $( "#drop" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+          .html( "Dropped!" );
+      }
+    });
+    </script>
+
+  </body>
+</html>
+
+

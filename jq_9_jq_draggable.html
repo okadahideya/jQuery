@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <style>
+      #draggable{
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+      }
+      #container{
+        width: 800px;
+        height: 500px;
+        background-color: aquamarine;
+      }
+      #draggable2{
+        width: 200px;
+        height: 100px;
+        background-color: coral;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="draggable" class="ui-widget-content">
+      <p>Drag me around</p>
+    </div>
+
+    <div id="container">
+      <div id="draggable2">div</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+
+
+    <script type="text/javascript">
+      $( "#draggable" ).draggable({ axis: "y" }); //縦
+      // $( "#draggable" ).draggable({ axis: "x" }); //横
+      $("#draggable2").draggable({containment:"parent"})
+    </script>
+
+  </body>
+</html>
+
+
